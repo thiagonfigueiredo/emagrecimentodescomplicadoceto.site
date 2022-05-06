@@ -168,6 +168,12 @@ span {
 .secret-title {
 }
 
+
+.fb-afiliado {
+  font-size: 10px;
+  color: #212d3b
+}
+
 @media screen and (max-width: 420px) {
   .logo-container {
     height: 120px;
