@@ -1,9 +1,3 @@
-const params = new Proxy(new URLSearchParams(window.location.search), {
-  get: (searchParams, prop) => searchParams.get(prop),
-});
-
-const promo = params.promo;
-
 const getPricePct = () => {
   switch (promo) {
     case "seu-sucesso":
@@ -46,13 +40,13 @@ const getPromoUrl = (url) => {
 const getPromoPrice = () => {
   switch (promo) {
     case "seu-sucesso":
-      return "https://pay.kiwify.com.br/18TaVUG";
+      return "https://pay.kiwify.com.br/mER6SYO";
     case "não-perca":
-      return "https://pay.kiwify.com.br/ojjkYNG";
+      return "https://pay.kiwify.com.br/mER6SYO";
     case "exclusiva":
       return "https://pay.kiwify.com.br/mER6SYO";
     default:
-      return "https://pay.kiwify.com.br/3y076YL";
+      return "https://pay.kiwify.com.br/mER6SYO";
   }
 };
 
@@ -76,7 +70,39 @@ if (document.getElementById("positive-button")) {
     .getElementById("positive-button")
     .setAttribute(
       "href",
-      getPromoUrl(getPromoPrice())
+      getPromoPrice() + window.location.search
+      // getPromoUrl()
+    );
+}
+
+if (document.getElementById("positive-resultados")) {
+  document
+    .getElementById("positive-resultados")
+    .setAttribute(
+      "href",
+      getPromoPrice() + window.location.search
+      // getPromoUrl()
+    );
+}
+
+if (document.getElementById("positive-bonus")) {
+  document
+    .getElementById("positive-bonus")
+    .setAttribute(
+      "href",
+      getPromoPrice() + window.location.search
+      // getPromoUrl()
+    );
+}
+
+
+if (document.getElementById("positive-button2")) {
+  document
+    .getElementById("positive-button2")
+    .setAttribute(
+      "href",
+      getPromoPrice() + window.location.search
+      // getPromoUrl()
     );
 }
 

@@ -57,6 +57,16 @@ body {
   padding-top: 10px;
 }
 
+section {
+  margin-top: 50px;
+  background-color: white;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-container {
   text-align: center;
   position: relative;
@@ -90,7 +100,6 @@ body {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  max-width: 80%;
   display: inline-block;
   font-weight: 800;
 }
@@ -149,16 +158,39 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
+#cta1 {
+  display: none;
+  margin-top: -40px;
+  padding-bottom: 10px;
+  padding: 20px;
+}
+
+#cta2 {
+  display: none;
+  padding: 20px;
+}
+
+.bonus-block {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 .positive-button {
   font-size: 20px;
   color: white;
   text-transform: uppercase;
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   min-width: 300px;
   font-weight: 900;
-  height: 70px;
-  line-height: 60px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
+  white-space: normal;
 }
 
 .container-read {
@@ -168,10 +200,58 @@ span {
 .secret-title {
 }
 
-
 .fb-afiliado {
   font-size: 10px;
   color: #212d3b
+}
+
+.cta-acesso {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-acesso img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.cta-acesso-bonus {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cta-resultados {
+  margin-top: 20px;
+}
+img {
+  padding: 0px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.acesso {
+  max-width: 600px;
+
+}
+
+.acesso-email {
+  font-weight: 600;
+  padding-top: 6px;
+}
+
+.resultado-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 420px) {
@@ -196,5 +276,13 @@ span {
   }
   h1 {
     font-size: 22px;
+  }
+
+  .resultado {
+    display: none;
+  }
+
+  .resultado-mobile {
+    display: block;
   }
 }
